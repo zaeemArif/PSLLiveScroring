@@ -2,6 +2,7 @@ package com.android.tabishhussain.psllivescoring.adapters;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +24,7 @@ import java.util.Comparator;
 public class ListAdapter extends BaseAdapter {
 
     CurrentData mCurrentData = new CurrentData();
-    Context context;
+    static Context context;
     ViewHolder mHolder;
 
     public ListAdapter(Context context) {
@@ -129,21 +130,69 @@ public class ListAdapter extends BaseAdapter {
 
         public ViewHolder(View view) {
             teamA = (TextView) view.findViewById(R.id.teamA);
+            Typeface teamATypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/arialbd.ttf");
+            teamA.setTypeface(teamATypeFace);
+
             teamB = (TextView) view.findViewById(R.id.teamB);
+            Typeface teamBTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/arialbd.ttf");
+            teamB.setTypeface(teamBTypeFace);
+
             battingTeam = (TextView) view.findViewById(R.id.battingTeam);
+            Typeface battingTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-schoolbook-bold.ttf");
+            battingTeam.setTypeface(battingTypeFace);
+
             battingTeamScore = (TextView) view.findViewById(R.id.battingScore);
+            Typeface battingScoreTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-schoolbook-bold.ttf");
+            battingTeamScore.setTypeface(battingScoreTypeFace);
+
             overs = (TextView) view.findViewById(R.id.overs);
+            Typeface oversTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-gothic.ttf");
+            overs.setTypeface(oversTypeFace);
+
             matchStatus = (TextView) view.findViewById(R.id.matchStatus);
+            Typeface matchStatusTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-gothic.ttf");
+            matchStatus.setTypeface(matchStatusTypeFace);
+
             startingTime = (TextView) view.findViewById(R.id.startingTime);
+            Typeface label_bowlerTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-gothic.ttf");
+            startingTime.setTypeface(label_bowlerTypeFace);
+
             label_batsman = (TextView) view.findViewById(R.id.label_batsman);
+            Typeface label_batsmanTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-gothic.ttf");
+            label_batsman.setTypeface(label_batsmanTypeFace);
+
             batsman1 = (TextView) view.findViewById(R.id.batsman1);
+            Typeface batsman1TypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/arialbd.ttf");
+            batsman1.setTypeface(batsman1TypeFace);
+
             batsman2 = (TextView) view.findViewById(R.id.batsman2);
+            Typeface batsman2TypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/arialbd.ttf");
+            batsman2.setTypeface(batsman2TypeFace);
+
             label_bowler = (TextView) view.findViewById(R.id.label_bowlers);
+            Typeface label_bowleTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-gothic.ttf");
+            label_bowler.setTypeface(label_bowleTypeFace);
+
             bowler = (TextView) view.findViewById(R.id.bowler);
+            Typeface bowlerTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/arialbd.ttf");
+            bowler.setTypeface(bowlerTypeFace);
+
             label_need = (TextView) view.findViewById(R.id.label_need);
+            Typeface labelTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/arialbd.ttf");
+            label_need.setTypeface(labelTypeFace);
+
             label_to_win = (TextView) view.findViewById(R.id.label_to_win);
+            Typeface label_to_winTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/arialbd.ttf");
+            label_to_win.setTypeface(label_to_winTypeFace);
+
             target = (TextView) view.findViewById(R.id.target);
+            Typeface targetTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-schoolbook-bold.ttf");
+            target.setTypeface(targetTypeFace);
+
             battingWickets = (TextView) view.findViewById(R.id.labelfor);
+            Typeface battingWicketsTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-gothic.ttf");
+            battingWickets.setTypeface(battingWicketsTypeFace);
+
             separator1 = (View) view.findViewById(R.id.separator1);
             separator3 = (View) view.findViewById(R.id.separator3);
             separator4 = (View) view.findViewById(R.id.separator4);
