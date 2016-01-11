@@ -158,7 +158,7 @@ public class ListAdapter extends BaseAdapter {
             startingTime.setTypeface(label_bowlerTypeFace);
 
             label_batsman = (TextView) view.findViewById(R.id.label_batsman);
-            Typeface label_batsmanTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-gothic.ttf");
+            Typeface label_batsmanTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/arialbd.ttf");
             label_batsman.setTypeface(label_batsmanTypeFace);
 
             batsman1 = (TextView) view.findViewById(R.id.batsman1);
@@ -170,7 +170,7 @@ public class ListAdapter extends BaseAdapter {
             batsman2.setTypeface(batsman2TypeFace);
 
             label_bowler = (TextView) view.findViewById(R.id.label_bowlers);
-            Typeface label_bowleTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/ufonts.com_century-gothic.ttf");
+            Typeface label_bowleTypeFace =Typeface.createFromAsset(context.getAssets(),"fonts/arialbd.ttf");
             label_bowler.setTypeface(label_bowleTypeFace);
 
             bowler = (TextView) view.findViewById(R.id.bowler);

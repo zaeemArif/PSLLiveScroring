@@ -29,6 +29,7 @@
                 android:layout_toLeftOf="@+id/vs"
                 android:layout_toStartOf="@+id/vs"
                 android:gravity="right"
+                android:textColor="@android:color/background_dark"
                 android:paddingBottom="2dp"
                 android:text="TeamA"
                 android:textSize="16sp" />
@@ -39,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:paddingLeft="12dp"
+                android:textColor="@android:color/holo_red_dark"
                 android:paddingRight="12dp"
                 android:paddingTop="4dp"
                 android:text="VS"
@@ -53,6 +55,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_toEndOf="@+id/vs"
                 android:layout_toRightOf="@+id/vs"
+                android:textColor="@android:color/background_dark"
                 android:paddingBottom="2dp"
                 android:text="TeamB"
                 android:textSize="16sp" />
@@ -62,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/teamA"
-                android:background="@android:color/holo_blue_bright" />
+                android:background="@android:color/background_dark" />
 
             <View
                 android:id="@+id/separator1"
@@ -73,7 +76,7 @@
                 android:layout_centerInParent="true"
                 android:layout_marginBottom="4dp"
                 android:layout_marginTop="4dp"
-                android:background="@android:color/holo_blue_bright" />
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:id="@+id/battingTeam"
@@ -85,6 +88,8 @@
                 android:layout_toLeftOf="@+id/separator1"
                 android:layout_toStartOf="@+id/separator1"
                 android:maxLines="2"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="italic"
                 android:padding="2dp"
                 android:text="Batting Team is batting at"
                 android:textSize="16sp" />
@@ -94,6 +99,7 @@
                 android:id="@+id/battingScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@id/battingTeam"
@@ -112,13 +118,17 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@id/battingScore"
                 android:paddingLeft="8dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_dark"
                 android:text="->  for 10 Wickets"
                 android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/overs"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@android:color/background_dark"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@id/labelfor"
@@ -134,7 +144,7 @@
                 android:layout_height="1dp"
                 android:layout_below="@id/overs"
                 android:layout_marginTop="4dp"
-                android:background="@android:color/holo_blue_bright" />
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:id="@+id/matchStatus"
@@ -144,6 +154,7 @@
                 android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:maxLines="2"
+                android:textColor="@android:color/holo_blue_dark"
                 android:padding="2dp"
                 android:paddingLeft="12dp"
                 android:paddingRight="12dp"
@@ -176,6 +187,7 @@
                 android:paddingLeft="8dp"
                 android:paddingTop="16dp"
                 android:text="Batsman : "
+                android:textColor="@android:color/background_dark"
                 android:textStyle="bold" />
 
             <View
@@ -187,7 +199,7 @@
                 android:layout_marginRight="4dp"
                 android:layout_toEndOf="@id/separator1"
                 android:layout_toRightOf="@id/separator1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:id="@+id/batsman1"
@@ -213,6 +225,7 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:textColor="@android:color/background_dark"
                 android:id="@+id/label_bowlers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -233,7 +246,7 @@
                 android:layout_marginRight="4dp"
                 android:layout_toEndOf="@id/separator1"
                 android:layout_toRightOf="@id/separator1"
-                android:background="@android:color/darker_gray" />
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:id="@+id/bowler"
@@ -269,6 +282,7 @@
                 android:paddingLeft="2dp"
                 android:paddingRight="2dp"
                 android:text="122"
+                android:textColor="@android:color/background_dark"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
